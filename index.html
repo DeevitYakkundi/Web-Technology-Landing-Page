@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hi There </title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div>
+        <div class="hero">
+            <nav>
+                <img src="images/menu.png" class="menu-img">
+                <img src="images/logo2.png" class="logo" height=100% width=10%>
+                <ul>
+                    <li><a href="digitalclock.html">Digital clock</a></li>
+                    <li><a href="">Report</a></li>
+                    <li><a href="http://www.google.com">Google Search</a></li>
+                    <li><a href="">Toggle</a></li>
+                </ul>
+                <button type="button" id="btn"><span></span></button>
+            </nav>
+            <div class="lamp-container">
+                <img src="images/lamp.png" class="lamp">
+                <img src="images/light.png" class="light" id="light">
+
+            </div>
+
+            <div class="text-contatiner">
+                <h1>THIS <br>LAMP WILL <br>BRIGHTEN YOUR DAY!</h1>
+                <p> This website shows working of a simple lamp using a switch(toggle) on the top right corner.
+                    As well as displays the real current time.
+                </p>
+                <a href="digitalclock.html">Time is precious</a>
+            </div>
+        </div>
+    </div>
+    <section class="Contact">
+        <h2 class="text-center">Contact Us</h2><br>
+        <p class="text-center"><h3>DEEVIT YAKKUNDI</h3>
+            <br>
+            1MS20IM012 <br>
+            <br>
+            IEM- 5TH SEM <br>
+            <br>
+            1ms20im012@msrit.edu<br>
+    
+            <br><br><br><br>
+            <h3> MOHAMMED UMAIR B</h3><br>
+    
+            1MS20ET030 <br>
+            <br>
+            ETE- 5TH SEM <br>
+            <br>
+            md006umair@gmail.com
+        </p>
+    </section>
+    <script>
+        var btn= document.getElementById("btn");
+        var light= document.getElementById("light");
+
+        btn.addEventListener("click",()=>{
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    })        
+    </script>
+</body>
+
+</html>
